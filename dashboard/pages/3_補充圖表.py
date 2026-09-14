@@ -9,8 +9,7 @@ st.set_page_config(page_title="補充圖表", layout="wide")
 st.title("補充圖表")
 st.caption("本頁為企劃書柒章之附錄頁，收錄附圖 1–8 之原圖，供放大檢視。")
 
-BASE = Path(__file__).resolve().parent.parent / "assets" / "supp"
-
+BASE = Path(__file__).resolve().parents[2] / "assets" / "supp"
 ITEMS = [
     ("附圖1　全網前20大站日均運量（2024–2025）——規模排序與本作品行為分類之對照",
      ["fig02_top20_stations_2024_2025.png"]),
