@@ -18,3 +18,25 @@ def base_layout() -> dict:
         margin=dict(l=50, r=20, t=60, b=40),
         hoverlabel=dict(font_size=13),
     )
+
+
+SUBTYPE_ORDER = {
+    "通勤型": ["住宅生活型", "商辦就業型", "未符合核心條件"],
+    "城際樞紐": ["旅運與周邊商業落差型", "商業服務集中型", "未符合核心條件"],
+    "週末觀光型": ["自然休閒型", "未符合核心條件"],
+    "春季活動型": ["不細分"],
+    "寒暑假觀光型（集集線）": ["不細分"],
+}
+
+SUBTYPE_GREY = "#898781"
+_SUBTYPE_PALETTE = ["#2a78d6", "#eb6834"]
+
+SUBTYPE_COLOR = {}
+for _subs in SUBTYPE_ORDER.values():
+    for _i, _s in enumerate(_subs):
+        SUBTYPE_COLOR[_s] = (SUBTYPE_GREY if _s in ("未符合核心條件", "不細分")
+                             else _SUBTYPE_PALETTE[_i])
+
+DATA_ASOF = "人次資料至 2026/7/31；稅籍、土地使用、出租表、Google Maps（2026/11/7）各有時點，見各頁說明"
+
+DEMO_STATIONS = ["沙崙", "汐科"]
