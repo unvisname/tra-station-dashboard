@@ -72,7 +72,7 @@ fig_a.add_trace(go.Scatter(
 ))
 fig_a.add_vrect(x0=QUAKE[0], x1=QUAKE[1], fillcolor=CONTRAST_GREY, opacity=0.12,
                 line_width=0, annotation_text="0403 地震影響期間",
-                annotation_position="top left")
+                annotation_position="bottom left")
 if cluster != "通勤型" and ts.notna().any():
     peak = ts.idxmax()
     fig_a.add_annotation(x=peak, y=ts[peak],
