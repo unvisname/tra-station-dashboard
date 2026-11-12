@@ -1,0 +1,5 @@
+﻿station,city,town,year_roc,n_building_deals,median_price_per_ping_all,n_excl_parking,median_price_per_ping_excl_parking,n_residential_types,median_price_per_ping_residential,q25_all,q75_all,median_total_price
+內灣,新竹縣,橫山鄉,114,15,141316,13,132397,15,141316,95760,306982,6000000
+南港,臺北市,南港區,114,412,747674,243,639035,412,747674,573735,979652,23140000
+汐科,新北市,汐止區,114,1296,399595,774,421666,1296,399595,298514,524288,12880000
+白沙屯,苗栗縣,通霄鎮,114,50,96942,46,96942,50,96942,74091,126466,4390000
